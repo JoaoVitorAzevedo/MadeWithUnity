@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\__Scripts\spawnCollectives.cs">
+    <Files>
+      <File FileName="Assets\__Scripts\Enemy.cs" Line="44" Column="48" />
+      <File FileName="Assets\__Scripts\Lista e Nodes\Node.cs" Line="31" Column="19" />
+      <File FileName="Assets\__Scripts\Lista e Nodes\Lista.cs" Line="100" Column="12" />
+      <File FileName="Assets\__Scripts\Player.cs" Line="108" Column="91" />
+      <File FileName="Assets\__Scripts\spawnCollectives.cs" Line="41" Column="5" />
+      <File FileName="Assets\__Scripts\LevelController.cs" Line="13" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\spawnCollectives.cs" line="26" column="43" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Lista.cs" line="7" column="1" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\addCoguGreen.cs" line="19" column="44" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\__Scripts\spawnCollectives.cs" line="39" column="50" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\__Scripts\spawnCollectives.cs" line="15" column="15" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\__Scripts\spawnCollectives.cs" line="49" column="39" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\__Scripts\Lista e Nodes\Lista.cs" line="68" column="42" />
+      <Breakpoint file="C:\Users\Public\Documents\Unity Projects\Tutorial_Udemy00\Assets\__Scripts\Lista e Nodes\Lista.cs" line="71" column="13" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
