@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/menu.unity
+    guid: c4cc31ded9984644e8f91461edcc5f67
+  - enabled: 1
+    path: Assets/_Scenes/cena1.unity
+    guid: 6db5d3a1a33a9ae45adf31c8be4d16bf
+  - enabled: 1
+    path: Assets/_Scenes/cena2.unity
+    guid: cdb589ba3c5fd01488262eb01cbd90c1
+  - enabled: 1
+    path: Assets/_Scenes/cena3.unity
+    guid: 618e9d09f6347e349a7e855bfb6ca86a
+  - enabled: 1
+    path: Assets/_Scenes/cena4.unity
+    guid: b4f21a88d62543949b2792cecd19ebe0
+  - enabled: 1
+    path: Assets/_Scenes/cena5.unity
+    guid: 60b217cabd2f0b04f9eeb9d154cbed3a
+  - enabled: 1
+    path: Assets/_Scenes/cena6.unity
+    guid: ffb74b66c1ffac547a12ab48b79e54ff
+  - enabled: 1
+    path: Assets/_Scenes/cena7.unity
+    guid: 455643308060c474eb0df19e2036b41c
+  - enabled: 1
+    path: Assets/_Scenes/cena8.unity
+    guid: 0e9437b7a02cc10448952ba559ada605
+  - enabled: 1
+    path: Assets/_Scenes/cena9.unity
+    guid: ba7d6666b5366e346a9ecbb45bbd4655
+  - enabled: 1
+    path: Assets/_Scenes/cena10.unity
+    guid: 6a9ae74d14b26ad4c9cbb10d0bcb6ac7
+  - enabled: 1
+    path: Assets/_Scenes/cena11.unity
+    guid: 68daf135a3376e040b6d2ce2bb930e85
+  - enabled: 1
+    path: Assets/_Scenes/cena12.unity
+    guid: e7a00d8d5a4dfc246bb54c995771eb60
+  - enabled: 1
+    path: Assets/_Scenes/cena13.unity
+    guid: 8a70cf3478b246048a59c23f75ff1526
+  - enabled: 1
+    path: Assets/_Scenes/cena14.unity
+    guid: 4b5b85fc2646e664c830c649d946f6ee
+  - enabled: 1
+    path: Assets/_Scenes/cena15.unity
+    guid: 2f4679dff50fec645acce03b4d7142f7
+  - enabled: 1
+    path: Assets/_Scenes/cena16.unity
+    guid: fb74b7495b3c8464dbb9cf0bc4de8f0a
+  - enabled: 1
+    path: Assets/_Scenes/cena17.unity
+    guid: 14f258c0c1b4fe64ebbf02486d542ee8
+  - enabled: 1
+    path: Assets/_Scenes/cena18.unity
+    guid: 50d14e6e0154fdb44a4428355959a7b7
+  - enabled: 1
+    path: Assets/_Scenes/cena19.unity
+    guid: 151b4e017da81c44bb5b60e69d5fe2f7
+  - enabled: 1
+    path: Assets/_Scenes/cena20.unity
+    guid: f5dfe66d92205f442895cec7898ce412
+  - enabled: 1
+    path: Assets/_Scenes/cena21.unity
+    guid: 5b2432a4c7d8beb47a395e0c5f19b0a2
+  - enabled: 1
+    path: Assets/_Scenes/cena22.unity
+    guid: b44cdb48a78b22e47bf91420d44b7eba
+  - enabled: 1
+    path: Assets/_Scenes/cena23.unity
+    guid: c6cc1cc5a291f4e4c92b8a39b054bc2b
+  - enabled: 1
+    path: Assets/_Scenes/cena24.unity
+    guid: 7ce1fe988a0b94a4fa8e9104674f4b90
+  - enabled: 1
+    path: Assets/_Scenes/cena25.unity
+    guid: 114ea944daada0c47aec97ae00cd3517
+  - enabled: 1
+    path: Assets/_Scenes/cena26.unity
+    guid: 232352f08a162fa4ea8c3b07a27541b4
+  - enabled: 1
+    path: Assets/_Scenes/cena27.unity
+    guid: 34f86b23d0ea2bd4f89e81da74ed566c
+  - enabled: 1
+    path: Assets/_Scenes/cena28.unity
+    guid: 18477b915e1308f43855f9b5f4d6b306
+  - enabled: 1
+    path: Assets/_Scenes/cena29.unity
+    guid: 20b02873b1129b441a76bdc707915daf
+  - enabled: 1
+    path: Assets/_Scenes/cena30.unity
+    guid: acd9c87ea40f4914cb5ef8cc9d3d338a
+  - enabled: 1
+    path: Assets/_Scenes/cena31.unity
+    guid: e2c60c52298e151428fb8154887e16e1
+  - enabled: 1
+    path: Assets/_Scenes/cena32.unity
+    guid: f59288b4d844e9049a0d4d516f3829dc
+  - enabled: 1
+    path: Assets/_Scenes/cena33.unity
+    guid: 6afeb98e15943a942b7dfcd7e93c5b0b
+  - enabled: 1
+    path: Assets/_Scenes/cena34.unity
+    guid: f7e0c86841ab5f0459a8e02731220b2d
+  - enabled: 1
+    path: Assets/_Scenes/cena35.unity
+    guid: 5565dc2031e2c02428a678eed2bdc073
+  - enabled: 1
+    path: Assets/_Scenes/cena36.unity
+    guid: 382c264b814607042be3834518bb57d5
+  - enabled: 1
+    path: Assets/_Scenes/cena37.unity
+    guid: 455c91ef6d4af1f4684eba71a6afa2e7
+  - enabled: 1
+    path: Assets/_Scenes/cena38.unity
+    guid: 62dc37a265dbdfb44999d93d3ec37074
+  - enabled: 1
+    path: Assets/_Scenes/cena39.unity
+    guid: dcaf0b4f3778c4a4bbe8c2082602661a
+  - enabled: 1
+    path: Assets/_Scenes/cena40.unity
+    guid: 1212fa77cb3fc9747b10ffdabd704910
+  - enabled: 1
+    path: Assets/_Scenes/templateScene.unity
+    guid: 545432d0180dd09479012c06d7f55849
+  m_configObjects: {}
