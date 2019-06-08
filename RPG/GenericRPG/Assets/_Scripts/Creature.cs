@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Creature : MonoBehaviour {
+public class Creature : MonoBehaviour
+{
 
     public float range;
     public float totalHealth;
@@ -11,15 +12,21 @@ public class Creature : MonoBehaviour {
     public float moveSpeed;
     protected CharacterController controller;
     public Animation anim;
+    public GameObject opponent;
+
+    public GameObject blood;
 
     float elapsedForRegen = 0.0f;
     public float lifeRegenPerSecond;
 
-    public bool  alive;
+    public bool alive;
 
 
-	// Use this for initialization
-	protected void Start () {
+
+
+    // Use this for initialization
+    protected void Start()
+    {
         alive = true;
         currentHealth = totalHealth;
         //InvokeRepeating("regenLife", 1, 1);
@@ -28,12 +35,18 @@ public class Creature : MonoBehaviour {
 
 
     }
-	
-	// Update is called once per frame
-public	void Update () {
+         
+    // Update is called once per frame
+    public void Update()
+    {
         //RegenLife(lifeRegenPerSecond);
-               		
-	}
+
+    }
+
+    protected void attack()
+    {
+
+    }
 
     public float getMoveSpeed()
     {
@@ -46,9 +59,15 @@ public	void Update () {
 
     public void getDamage(float damage)
     {
+
         currentHealth -= damage;
+        Debug.Log(this.ToString() + "takes " + damage + "daninhos");
         if (currentHealth < 0)
             currentHealth = 0;
+
+      Instantiate(blood, transform.position, transform.rotation);
+        
+
 
     }
     public void RegenLife(float totalCure)
@@ -79,6 +98,12 @@ public	void Update () {
             alive = true;
             return false;
         }
+    }
+
+     void dieMethod()
+    {
+        Debug.Log("creature dies called");
+
     }
 
 }

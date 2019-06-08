@@ -1,31 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ClickToMove : MonoBehaviour {
+public class ClickToMove : MonoBehaviour
+{
 
 
     public static bool isAttacking;
     private Vector3 position;
     private float moveSpeed;
     public CharacterController controller;
+
     public AnimationClip run;
     public AnimationClip idle;
     public Animation anim;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         position = transform.position;
         controller = this.GetComponent<CharacterController>();
         anim = this.GetComponent<Animation>();
-        this.moveSpeed = this.GetComponent<Fighter>().moveSpeed;
-        
+        this.moveSpeed = this.GetComponent<Player>().moveSpeed;
+
 
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         if (!isAttacking)
         {
@@ -37,10 +39,11 @@ public class ClickToMove : MonoBehaviour {
             }
             moveToPosition();
         }
-        moveSpeed = this.GetComponent<Fighter>().moveSpeed;
-	}
+        moveSpeed = this.GetComponent<Player>().moveSpeed;
+    }
 
-    void locatePosition() {
+    void locatePosition()
+    {
 
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -61,7 +64,7 @@ public class ClickToMove : MonoBehaviour {
         //game object is moving
         if (Vector3.Distance(transform.position, position) > 1.5)
         {
-            
+
             Quaternion newRotation = Quaternion.LookRotation(position - transform.position);
             newRotation.x = 0f;
             newRotation.z = 0f;
@@ -73,7 +76,12 @@ public class ClickToMove : MonoBehaviour {
         }
         else
         { //gameobject is not moving
-            anim.CrossFade(idle.name);
+            if (this.GetComponent<Player>().alive)
+            {
+                anim.CrossFade(idle.name);
+
+            }
+            
         }
     }
 }
