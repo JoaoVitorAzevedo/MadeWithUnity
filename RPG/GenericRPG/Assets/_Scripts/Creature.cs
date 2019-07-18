@@ -20,6 +20,7 @@ public class Creature : MonoBehaviour
     public float lifeRegenPerSecond;
 
     public bool alive;
+    protected bool impacted;
 
 
 

@@ -9,7 +9,9 @@ public class Player : Creature
     bool endedDieAnim;
 
     public double impactTime;
-    public bool impacted = false;
+
+    public float combatEscapeTime;
+    public float countDown;
 
 
 
@@ -18,6 +20,7 @@ public class Player : Creature
     {
         anim = this.GetComponent<Animation>();
         base.Start();
+        
 
     }
 
@@ -27,8 +30,8 @@ public class Player : Creature
     void Update()
     {
         RegenLife(lifeRegenPerSecond);
-
-        attack();
+        if(!isDead())
+            attack();
 
     }
     void impact()
@@ -37,6 +40,9 @@ public class Player : Creature
         {
             if ((anim[attackAnim.name].time > anim[attackAnim.name].length * impactTime && anim[attackAnim.name].time < 0.9 * anim[attackAnim.name].length))
             {
+                countDown = combatEscapeTime;
+                CancelInvoke("combatEscapeCountDown");
+                InvokeRepeating("combatEscapeCountDown", 0, 1);
                 opponent.GetComponent<Enemy>().getDamage(this.damage);
                 impacted = true;
             }
@@ -58,6 +64,15 @@ public class Player : Creature
 
         return base.isDead();
 
+
+    }
+    void combatEscapeCountDown()
+    {
+        countDown -= 1;
+        if(countDown == 0)
+        {
+            CancelInvoke("combatEscapeCountDown");
+        }
 
     }
 

@@ -6,6 +6,7 @@ public class Enemy : Creature
 
 
     private GameObject player;
+    private LevelSystem playLevelaccess;
 
 
     //private Animation anim;
@@ -24,6 +25,8 @@ public class Enemy : Creature
         anim = this.GetComponent<Animation>();
         base.Start();
         this.opponent = GameObject.FindGameObjectWithTag("Player");
+        this.playLevelaccess = opponent.GetComponent<LevelSystem>();
+
 
     }
 
@@ -107,7 +110,7 @@ public class Enemy : Creature
         dropLoot();
         if (anim[die.name].time > 0.95 * anim[die.name].length)
         {
-
+            playLevelaccess.exp += 50;
             Destroy(gameObject);
 
         }
